@@ -5,7 +5,10 @@
  * @param {string} [toReverse=''] - the string to reverse
  * @returns {string} the reversed argument
  */
-const stub = () => {};
+const toReverse = ('') => {
+  const reversedString = toReverse.toUpperCase.reverse();
+  return reversedString;
+};
 
 /*
   your strategy goes here
@@ -18,7 +21,7 @@ for (const solution of [
   // the main test suite for the function
   describe(solution.name + ': reverses a string', () => {
     it('default parameter is an empty string -> ""', () => {
-      expect(solution()).toEqual('');
+      expect(solution('')).toEqual('');
     });
     it('an empty string -> ""', () => {
       expect(solution('')).toEqual('');
