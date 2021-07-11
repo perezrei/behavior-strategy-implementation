@@ -6,7 +6,14 @@
  * @param {any} b - the second value
  * @returns {string} how similar are a and b?
  */
-const howSimilarAre = () => {};
+const howSimilarAre = (a, b) => {
+  if(a === b){
+    return 'exactly the same';
+  } else if(Object.is(a, b)){
+    return 'exactly the same';
+  }
+
+};
 
 describe('determine how similar two values are', () => {
   describe('exactly the same', () => {
