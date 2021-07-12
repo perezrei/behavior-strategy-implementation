@@ -9,9 +9,17 @@
 const howSimilarAre = (a, b) => {
   if(a === b){
     return 'exactly the same';
-  } else if(Object.is(a, b)){
+  } 
+  if(Object.is(a, b)){
     return 'exactly the same';
   }
+  if(typeof a === typeof b) {
+    return "the same type";
+  }
+  if(typeof a !== typeof b) {
+    return 'nothing alike';
+  }
+    
 
 };
 
